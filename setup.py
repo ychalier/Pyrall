@@ -1,13 +1,13 @@
 from setuptools import setup
 
 setup(
-    name='Pyrall',
-    version='0.1.1',
+    name='forkpy',
+    version='0.0.2',
     author='Yohan Chalier',
     author_email='yohan.chalier@gmail.com',
-    packages=['pyrall',],
+    packages=['forkpy',],
     scripts=[],
-    url='http://pypi.python.org/pypi/Pyrall/',
+    url='http://pypi.python.org/pypi/forkpy/',
     license='GNU GPLv3',
     description='Multiprocessing framework.',
     long_description=open('README.rst').read(),

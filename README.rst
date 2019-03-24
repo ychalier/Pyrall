@@ -1,17 +1,30 @@
 ===========
-Pyrall
+forkpy
 ===========
 
-Pyrall provides a framework for multiprocessing in Python. Typical usage
-often looks like this::
+**forkpy** provides a framework for multiprocessing in Python. Typical usage
+might look like this:
 
-    from pyrall import Factor, Task
+.. code-block:: python
+
+    from forkpy import Factory, Task
+
+    def target_function(args, worker):
+        a, b = args
+        return a + b
 
     factory = Factory()
-    for _ in range(100):
-        factory.assign(Task())
+    for a in range(100):
+        for b in range(100):
+            args = (a, b)
+            factory.assign(Task(args, target_function))
 
     factory.start()
     factory.join()
 
     print(factory.results)
+
+Sources
+-------
+
+See the project on `GitHub <https://github.com/ychalier/forkpy.py>`_.
