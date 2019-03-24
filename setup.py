@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='forkpy',
-    version='0.0.2',
+    version='0.0.3',
     author='Yohan Chalier',
     author_email='yohan.chalier@gmail.com',
     packages=['forkpy',],

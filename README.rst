@@ -27,4 +27,4 @@ might look like this:
 Sources
 -------
 
-See the project on `GitHub <https://github.com/ychalier/forkpy.py>`_.
+See the project on `GitHub <https://github.com/ychalier/forkpy>`_.
